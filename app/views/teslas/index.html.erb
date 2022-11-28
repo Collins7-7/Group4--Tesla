@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Electric Cars, Solar & Clean Energy | Tesla</title>
   <link rel="shortcut icon" href="img/favicon.ico" />
-  <%# <link rel="stylesheet" href="css/tesla-clone.css" /> %>
+  <link rel="stylesheet" href="css/tesla-clone.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="header__nav-section">
       <div>
         <%# <img class="header__logo" src="img/tesla-logo.svg" width="120" /> %>
-         <%= image_tag ("tesla-logo.svg"), width: 120 %>
+         <%# <%= image_tag ("tesla-logo.svg"), width: 120 %> %>
 
       </div>
       <div>
@@ -26,17 +26,15 @@
           <a href="#">Model 3</a>
           <a href="#">Model X</a>
           <a href="#">Model Y</a>
-          <a href="#">Solar Roof</a>
-          <a href="#">Solar Panel</a>
           <div class="header__min-slider"></div>
         </nav>
       </div>
       <div>
-        <nav class="header__nav header__nav--sub">
+        <%# <nav class="header__nav header__nav--sub">
           <a href="#">Shop</a>
           <a href="#">Account</a>
           <a href="#" class="open-menu">Menu</a>
-        </nav>
+        </nav> %>
         <nav class="header__nav header__nav--mobile">
           <a href="#" class="open-menu">Menu</a>
         </nav>
@@ -47,14 +45,14 @@
     <section class="container__section" id="one">
       <div class="container__content" data-scroll id="content-one">
         <div class="container__content-header">
-          <h2>Model S</h2>
+          <h2>Model 3</h2>
           <p>Order Online for Touchless Delivery</p>
         </div>
         <div class="container__content-footer">
           <button class="btn btn-dark">Custom order</button>
           <button class="btn btn-light ml">Existing inventory</button>
-          <%# <img class="container__down-arrow" src="img/down-arrow.svg" width="70" /> %>
-            <%= image_tag ("down-arrow.svg"), width: 70 %>
+          <img class="container__down-arrow" src="img/down-arrow.svg" width="70" />
+            <%# <%= image_tag ("down-arrow.svg"), width: 70 %> %>
         </div>
       </div>
     </section>
@@ -72,7 +70,7 @@
     <section class="container__section" id="three">
       <div class="container__content" data-scroll id="content-three">
         <div class="container__content-header">
-          <h2>Model 3</h2>
+          <h2>Model X</h2>
           <p>Order Online for Touchless Delivery</p>
         </div>
         <div class="container__content-footer">

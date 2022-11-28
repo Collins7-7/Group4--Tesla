@@ -1,0 +1,718 @@
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:45:13 +0300
+  
+ActionController::RoutingError (uninitialized constant TeslaController
+Did you mean?  TeslasController):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:47:37 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 96.2ms | Allocations: 2297)
+  Rendered layout layouts/application.html.erb (Duration: 96.6ms | Allocations: 2373)
+Completed 500 Internal Server Error in 215ms (Allocations: 6237)
+
+
+  
+ActionView::Template::Error (The asset "tesla-logo.svg" is not present in the asset pipeline.
+):
+    17:     <div class="header__nav-section">
+    18:       <div>
+    19:         <%# <img class="header__logo" src="img/tesla-logo.svg" width="120" /> %>
+    20:          <%= image_tag ("tesla-logo.svg"), width: 120 %>
+    21: 
+    22:       </div>
+    23:       <div>
+  
+app/views/teslas/index.html.erb:20
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:48:38 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2250)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2323)
+Completed 500 Internal Server Error in 10ms (Allocations: 3302)
+
+
+  
+ActionView::Template::Error (The asset "down-arrow.svg" is not present in the asset pipeline.
+):
+    54:           <button class="btn btn-dark">Custom order</button>
+    55:           <button class="btn btn-light ml">Existing inventory</button>
+    56:           <%# <img class="container__down-arrow" src="img/down-arrow.svg" width="70" /> %>
+    57:             <%= image_tag ("down-arrow.svg"), width: 70 %>
+    58:         </div>
+    59:       </div>
+    60:     </section>
+  
+app/views/teslas/index.html.erb:57
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:49:30 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1319)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1393)
+Completed 500 Internal Server Error in 5ms (Allocations: 2377)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Cars, Solar & Clean Energy | Tesla</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/tesla-clone.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+   
+    <div class="header__nav-section">
+      <div>
+        <img class="header__logo" src="img/tesla-logo.svg" width="120" /> %>
+         <%= image_tag ("tesla-logo.svg"), width: 120
+
+      </div>
+      <div>
+        <nav class="header__nav header__nav--main">
+          <a href="#">Model S</a>
+          <a href="#">Model 3</a>
+          <a href="#">Model X</a>
+          <a href="#">Model Y</a>
+          <a href="#">Solar Roof</a>
+          <a href="#">Solar Panel</a>
+          <div class="header__min-slider"></div>
+        </nav>
+      </div>
+      <div>
+        <nav class="header__nav header__nav--sub">
+          <a href="#">Shop</a>
+          <a href="#">Account</a>
+          <a href="#" class="open-menu">Menu</a>
+        </nav>
+        <nav class="header__nav header__nav--mobile">
+          <a href="#" class="open-menu">Menu</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <section class="container__section" id="one">
+      <div class="container__content" data-scroll id="content-one">
+        <div class="container__content-header">
+          <h2>Model S</h2>
+          <p>Order Online for Touchless Delivery</p>
+        </div>
+        <div class="container__content-footer">
+          <button class="btn btn-dark">Custom order</button>
+          <button class="btn btn-light ml">Existing inventory</button>
+          <img class="container__down-arrow" src="img/down-arrow.svg" width="70" />
+            <%= image_tag ("down-arrow.svg"), width: 70 %>
+        </div>
+      </div>
+    </section>
+    <section class="container__section" id="two">
+      <div class="container__content" data-scroll id="content-two">
+        <div class="container__content-header">
+          <h2>Model Y</h2>
+          <p>Order Online for Touchless Delivery</p>
+        </div>
+        <div class="container__content-footer">
+          <button class="btn btn-dark">Custom order</button>
+          <button class="btn btn-light ml">Existing inventory</button>
+        </div>
+    </section>
+    <section class="container__section" id="three">
+      <div class="container__content" data-scroll id="content-three">
+        <div class="container__content-header">
+          <h2>Model 3</h2>
+          <p>Order Online for Touchless Delivery</p>
+        </div>
+        <div class="container__content-footer">
+          <button class="btn btn-dark">Custom order</button>
+          <button class="btn btn-light ml">Existing inventory</button>
+        </div>
+    </section>
+  </main>
+
+  <div class="overlay">
+    <div class="overlay__menu">
+      <div class="overlay__close">
+        <span>&times;</span>
+      </div>
+      <ul>
+        <li>Model S</li>
+        <li>Model 3</li>
+        <li>Model X</li>
+        <li>Model Y</li>
+        <li>Solar Roof</li>
+        <li>Solar Panels</li>
+        <li>Existing Inventory</li>
+        <li>Used Inventory</li>
+        <li>Trade-In</li>
+        <li>Charging</li>
+        <li>Find Us</li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en">
+3:    <head>
+4:      <meta charset="UTF-8">
+5:      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+6:      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7:      <title>Electric Cars, Solar & Clean Energy | Tesla</title>
+8:      <link rel="shortcut icon" href="img/favicon.ico" />
+9:      <link rel="stylesheet" href="css/tesla-clone.css" />
+10:      <link rel="preconnect" href="https://fonts.googleapis.com">
+11:      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+12:      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+13:    </head>
+14:    <body>
+15:      <header class="header">
+16:       
+17:        <div class="header__nav-section">
+18:          <div>
+19:            <img class="header__logo" src="img/tesla-logo.svg" width="120" /> %>
+20:             <%= image_tag ("tesla-logo.svg"), width: 120
+21:    
+22:          </div>
+23:          <div>
+24:            <nav class="header__nav header__nav--main">
+25:              <a href="#">Model S</a>
+26:              <a href="#">Model 3</a>
+27:              <a href="#">Model X</a>
+28:              <a href="#">Model Y</a>
+29:              <a href="#">Solar Roof</a>
+30:              <a href="#">Solar Panel</a>
+31:              <div class="header__min-slider"></div>
+32:            </nav>
+33:          </div>
+34:          <div>
+35:            <nav class="header__nav header__nav--sub">
+36:              <a href="#">Shop</a>
+37:              <a href="#">Account</a>
+38:              <a href="#" class="open-menu">Menu</a>
+39:            </nav>
+40:            <nav class="header__nav header__nav--mobile">
+41:              <a href="#" class="open-menu">Menu</a>
+42:            </nav>
+43:          </div>
+44:        </div>
+45:      </header>
+46:      <main class="">
+47:        <section class="container__section" id="one">
+48:          <div class="container__content" data-scroll id="content-one">
+49:            <div class="container__content-header">
+50:              <h2>Model S</h2>
+51:              <p>Order Online for Touchless Delivery</p>
+52:            </div>
+53:            <div class="container__content-footer">
+54:              <button class="btn btn-dark">Custom order</button>
+55:              <button class="btn btn-light ml">Existing inventory</button>
+56:              <img class="container__down-arrow" src="img/down-arrow.svg" width="70" />
+57:                <%= image_tag ("down-arrow.svg"), width: 70 %>
+58:            </div>
+59:          </div>
+60:        </section>
+61:        <section class="container__section" id="two">
+62:          <div class="container__content" data-scroll id="content-two">
+63:            <div class="container__content-header">
+64:              <h2>Model Y</h2>
+65:              <p>Order Online for Touchless Delivery</p>
+66:            </div>
+67:            <div class="container__content-footer">
+68:              <button class="btn btn-dark">Custom order</button>
+69:              <button class="btn btn-light ml">Existing inventory</button>
+70:            </div>
+71:        </section>
+72:        <section class="container__section" id="three">
+73:          <div class="container__content" data-scroll id="content-three">
+74:            <div class="container__content-header">
+75:              <h2>Model 3</h2>
+76:              <p>Order Online for Touchless Delivery</p>
+77:            </div>
+78:            <div class="container__content-footer">
+79:              <button class="btn btn-dark">Custom order</button>
+80:              <button class="btn btn-light ml">Existing inventory</button>
+81:            </div>
+82:        </section>
+83:      </main>
+84:    
+85:      <div class="overlay">
+86:        <div class="overlay__menu">
+87:          <div class="overlay__close">
+88:            <span>&times;</span>
+89:          </div>
+90:          <ul>
+91:            <li>Model S</li>
+92:            <li>Model 3</li>
+93:            <li>Model X</li>
+94:            <li>Model Y</li>
+95:            <li>Solar Roof</li>
+96:            <li>Solar Panels</li>
+97:            <li>Existing Inventory</li>
+98:            <li>Used Inventory</li>
+99:            <li>Trade-In</li>
+100:            <li>Charging</li>
+101:            <li>Find Us</li>
+102:          </ul>
+103:        </div>
+104:      </div>
+105:      <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+106:    </body>
+107:    </html>
+  
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+app/views/teslas/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/teslas/index.html.erb:25: unknown regexp option - a
+app/views/teslas/index.html.erb:26: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:26: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:27: unknown regexp option - a
+app/views/teslas/index.html.erb:28: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:28: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:29: unknown regexp option - a
+app/views/teslas/index.html.erb:30: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:30: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:31: unknown regexp options - dv
+app/views/teslas/index.html.erb:32: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:33: unknown regexp options - dv
+app/views/teslas/index.html.erb:34: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:36: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:37: unknown regexp option - a
+app/views/teslas/index.html.erb:38: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:38: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:39: unknown regexp options - av
+app/views/teslas/index.html.erb:40: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/teslas/index.html.erb:42: unknown regexp options - av
+app/views/teslas/index.html.erb:43: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:44: unknown regexp options - dv
+app/views/teslas/index.html.erb:45: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:50: unknown regexp option - h
+app/views/teslas/index.html.erb:50: syntax error, unexpected integer literal, expecting ')'
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:51: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:52: unknown regexp options - dv
+app/views/teslas/index.html.erb:53: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:54: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/teslas/index.html.erb:55: unknown regexp options - btt
+app/views/teslas/index.html.erb:56: syntax error, unexpected '<'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/teslas/index.html.erb:56: syntax error, unexpected '>'
+app/views/teslas/index.html.erb:109: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:50:37 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2216)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2289)
+Completed 500 Internal Server Error in 10ms (Allocations: 3268)
+
+
+  
+ActionView::Template::Error (The asset "down-arrow.svg" is not present in the asset pipeline.
+):
+    54:           <button class="btn btn-dark">Custom order</button>
+    55:           <button class="btn btn-light ml">Existing inventory</button>
+    56:           <img class="container__down-arrow" src="img/down-arrow.svg" width="70" />
+    57:             <%= image_tag ("down-arrow.svg"), width: 70 %>
+    58:         </div>
+    59:       </div>
+    60:     </section>
+  
+app/views/teslas/index.html.erb:57
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:50:57 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 370)
+  Rendered layout layouts/application.html.erb (Duration: 1117.8ms | Allocations: 96075)
+Completed 200 OK in 1132ms (Views: 1130.6ms | Allocations: 97108)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:50:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:50:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:54:58 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2981)
+Completed 200 OK in 13ms (Views: 12.4ms | Allocations: 3987)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:54:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:54:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:56:15 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2989)
+Completed 200 OK in 15ms (Views: 13.7ms | Allocations: 3995)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:56:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:56:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:58:04 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3015)
+Completed 200 OK in 16ms (Views: 13.9ms | Allocations: 4021)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:58:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:58:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:58:10 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2336)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 2644)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:58:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:58:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:58:48 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2983)
+Completed 200 OK in 15ms (Views: 13.1ms | Allocations: 3989)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:58:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:58:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:59:13 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 382)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 2984)
+Completed 200 OK in 32ms (Views: 31.0ms | Allocations: 3991)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:59:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:59:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+Started GET "/" for 127.0.0.1 at 2022-11-28 08:59:49 +0300
+Processing by TeslasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teslas/index.html.erb within layouts/application
+  Rendered teslas/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2993)
+Completed 200 OK in 22ms (Views: 11.6ms | Allocations: 4000)
+
+
+Started GET "/css/tesla-clone.css" for 127.0.0.1 at 2022-11-28 08:59:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/css/tesla-clone.css"):
+  
+Started GET "/img/down-arrow.svg" for 127.0.0.1 at 2022-11-28 08:59:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/down-arrow.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
